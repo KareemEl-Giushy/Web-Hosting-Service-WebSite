@@ -1,0 +1,45 @@
+{
+  "particles": {
+    "number": {
+      "value": 100,
+      "density": {
+        "enable": true
+      }
+    },
+    "opacity": {
+      "value": 0.5,
+      "radom": true,
+      "anim": {
+        "enable": true,
+        "speed": 3
+      }
+    },
+    "size": {
+      "value": 5,
+      "radom": true,
+      "anim": {
+        "enable": true
+      }
+    }
+  },
+  "interactivity": {
+    "events": {
+      "onhover": {
+        "enable": true,
+        "mode": ["repulse", "grab"]
+      }
+    },
+    "modes": {
+      "repulse": {
+        "distance": 100,
+        "duration": 0.4
+      },
+      "grab": {
+        "distance": 300
+      },
+      "pusch": {
+        "particles_nb": 50
+      }
+    }
+  }
+}

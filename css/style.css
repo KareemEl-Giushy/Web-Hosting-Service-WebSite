@@ -1,0 +1,170 @@
+/* Globals */
+/* Fonts */
+@font-face {
+  font-family: har-san-black;
+  src: url(../fonts/HarmoniaSansProCyr-Black.otf);
+}
+@font-face {
+  font-family: har-san-bold;
+  src: url(../fonts/HarmoniaSansProCyr-bold.otf);
+}
+@font-face {
+  font-family: har-san-italic;
+  src: url(../fonts/HarmoniaSansProCyr-italic.otf);
+}
+@font-face {
+  font-family: har-san-light;
+  src: url(../fonts/HarmoniaSansProCyr-light.otf);
+}
+@font-face {
+  font-family: har-san-regular;
+  src: url(../fonts/HarmoniaSansProCyr-regular.otf);
+}
+@font-face {
+  font-family: har-san-semi;
+  src: url(../fonts/HarmoniaSansProCyr-semibd.otf);
+}
+:root {
+  --text-main-color: #ED3E4B;
+  --text-main-bg: #51465B;
+  --text-main-white: #FCF8EC;
+  --text-main-brown: #7E6551;
+}
+body {
+  height: 10000px
+}
+/* Text-color Class */
+.text-main-color {
+  color: var(--text-main-color);
+}
+.text-main-bg {
+  color: var(--text-main-bg);
+
+}
+.text-main-white {
+  color: var(--text-main-white);
+
+}
+.text-main-brown {
+  color: var(--text-main-brown);
+}
+/* Bg-color Class */
+.bg-main-color {
+  background-color:  var(--text-main-color);
+}
+.bg-main-bg {
+  background-color:  var(--text-main-bg);
+}
+.bg-main-white {
+  background-color:  var(--text-main-white);
+}
+.bg-main-brown{
+  background-color:  var(--text-main-brown);
+}
+/* Fonts */
+.font-har-bold {
+  font-family: har-san-bold;
+}
+.font-har-black {
+  font-family: har-san-black;
+}
+.font-har-italic {
+  font-family: har-san-italic;
+}
+.font-har-light {
+  font-family: har-san-light;
+}
+.font-har-regular {
+  font-family: har-san-regular;
+}
+.font-har-semi {
+  font-family: har-san-semi;
+}
+/* Strat Navbar */
+.navy {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+.navy nav .navbar-brand {
+  color: #F7F7F2 !important;
+  font-size: 30px;
+  padding: 10px;
+}
+.navy nav ul li {
+  padding: 10px;
+  font-size: 16px;
+}
+.nav-link {
+  color: #F7F7F2 !important;
+  font-family: har-san-regular;
+}
+.nav-link.active {
+
+}
+.make-btn {
+  background-color: var(--text-main-color);
+  box-shadow: 0 5px 5px var(--text-main-brown);
+  border-radius: 45px;
+  padding: 0 15px;
+}
+/* Start the seciton */
+section {
+  position: relative;
+  overflow: hidden;
+}
+#particles-js {
+   background: url('../imgs/artboard 1.svg');
+   background-repeat: no-repeat;
+   background-position: right;
+   background-position-y: 100%;
+   position: absolute;
+   z-index: 1;
+}
+
+section .info {
+  position: absolute;
+  top: 20%;
+  left: 5%;
+  user-select: none;
+}
+section .info button {
+  background-color: var(--text-main-color);
+  color: var(--text-main-white);
+  font-family: har-san-bold;
+  padding: 10px 60px;
+  font-size: 25px;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 0 15px var(--text-main-brown);
+}
+/* Featrues Section */
+#features {
+
+}
+#features h2 {
+  padding: 25px 0 0;
+}
+#features div.container div.row > div {
+  border-bottom: .5px solid #5959598c;
+  border-right: .5px solid #5959598c;
+  padding: 0 30px 40px;
+
+}
+#features div.container div.row > div:nth-child(3), #features div.container div.row > div:nth-child(6) {
+  border-right: none;
+}
+#features .btom {
+  padding-top: 3rem !important;
+  border-bottom: none !important;
+}
+#features .head-f {
+  font-size: 30pt;
+  font-weight: lighter;
+}
+#features img.f-icons {
+    width: 50%;
+}
