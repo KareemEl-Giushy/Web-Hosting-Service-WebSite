@@ -89,6 +89,17 @@ body {
   width: 100%;
   z-index: 2;
 }
+.nav-layer {
+      background: linear-gradient(to right, #785fa9,#6f4286, #5c4b9c, #5e3b82);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all 0.4s ease;
+}
 .navy nav .navbar-brand {
   color: #F7F7F2 !important;
   font-size: 30px;
@@ -111,6 +122,9 @@ body {
   border-radius: 45px;
   padding: 0 15px;
 }
+.navy:hover .nav-layer, .navy.activate .nav-layer {
+  transform: scaleY(1);
+}
 /* Start the seciton */
 section {
   position: relative;
@@ -129,7 +143,10 @@ section .info {
   position: absolute;
   top: 20%;
   left: 5%;
+  z-index: 1;
+  border-radius: 50px;
   user-select: none;
+  transition: background 0.5s ease;
 }
 section .info button {
   background-color: var(--text-main-color);
@@ -140,6 +157,12 @@ section .info button {
   border-radius: 0;
   border: none;
   box-shadow: 0 0 15px var(--text-main-brown);
+}
+section .info:hover {
+  background: var(--text-main-white);
+}
+section .info:hover h1, section .info:hover p {
+  color: #262626;
 }
 /* Featrues Section */
 #features {
@@ -165,6 +188,17 @@ section .info button {
   font-size: 30pt;
   font-weight: lighter;
 }
-#features img.f-icons {
+#features .f-icons {
     width: 50%;
+    border: none;
+}
+/* The Strip Section */
+#strip {
+
+}
+#strip div button {
+  width: 35%;
+  box-shadow: 0px 4px 5px -2px var(--text-main-white);
+  font-size: 25px;
+  font-family: har-san-bold;
 }

@@ -5,7 +5,7 @@ $(document).ready(function (){
   // the NavBar
   var navHeight = $(".navy").height();
   // Global
-  $("section").height(screenH);
+  $("section").first().height(screenH);
   // Functions
 
 });
