@@ -53,7 +53,8 @@ body {
   background-color:  var(--text-main-color);
 }
 .bg-main-bg {
-  background-color:  var(--text-main-bg);
+  /* background-color:  var(--text-main-bg); */
+  background: linear-gradient(to right, #785fa9,#6f4286, #5c4b9c, #5e3b82);
 }
 .bg-main-white {
   background-color:  var(--text-main-white);
@@ -90,7 +91,7 @@ body {
   z-index: 2;
 }
 .nav-layer {
-      background: linear-gradient(to right, #785fa9,#6f4286, #5c4b9c, #5e3b82);
+  background: linear-gradient(to right, #5e3b82, #5c4b9c, #6f4286, #785fa9);
   position: absolute;
   top: 0;
   left: 0;
@@ -122,6 +123,7 @@ body {
   border-radius: 45px;
   padding: 0 15px;
 }
+/* Start Hovering And Animation */
 .navy:hover .nav-layer, .navy.activate .nav-layer {
   transform: scaleY(1);
 }
@@ -158,6 +160,7 @@ section .info button {
   border: none;
   box-shadow: 0 0 15px var(--text-main-brown);
 }
+/* Start Hovering And Animation */
 section .info:hover {
   background: var(--text-main-white);
 }
@@ -202,3 +205,51 @@ section .info:hover h1, section .info:hover p {
   font-size: 25px;
   font-family: har-san-bold;
 }
+/* The CMS Section */
+#cms {
+
+}
+#cms .the-card:first-child{
+  position: relative;
+  top: -30px;
+}
+#cms .the-card:last-child{
+  position: relative;
+  top: 30px;
+}
+/* The Search Seciton */
+#search {
+
+}
+#search h2 {
+  font-size: 50px;
+}
+#search .searching-box {
+  background: var(--text-main-white);
+  padding: 20px;
+  border-radius: 50px;
+}
+#search .searching-box input {
+  font-size: 30px;
+  border: none;
+  background: var(--text-main-white);
+  padding: 10px;
+  outline: 0;
+}
+#search .searching-button {
+  position: relative;
+  /* overflow: hidden; */
+
+}
+/* #search .searching-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10px;
+  background-color: #D63A58;
+  width: 60%;
+  height: 100%;
+  border-radius: 103%;
+  border-bottom-left-radius: 120px;
+} */
+#search .searching-button
